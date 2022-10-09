@@ -4,7 +4,7 @@ async function filterClickHandler(event) {
     const id = window.location.toString().split('/')[
       window.location.toString().split('/').length - 1
     ];
-    const response = await fetch('/api/searchoptions/filterbtn', {
+    const response = await fetch('/api/filter-routes', {
       method: 'PUT',
       body: JSON.stringify({
         post_id: id
