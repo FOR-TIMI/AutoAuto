@@ -1,4 +1,4 @@
-const {User, Comment, Post} = require('../models');
+const {User, Vehicle, CarMake} = require('../models');
 
 module.exports.findAllUsers = async(req, res) => {
     try{
@@ -29,16 +29,8 @@ module.exports.findOneUser = async(req, res) => {
             },
             include: [
                 {
-                    model: Post,
-                    attributes: ['id', 'title', 'content', 'createdAt']
-                },
-                {
-                    model: Comment,
-                    attributes: ['id', 'comment_text', 'created_at'],
-                    include: {
-                        model: User,
-                        attributes: ['username']
-                    }
+                    model: Vehicle,
+                   
                 }
             ]
         })
@@ -47,7 +39,7 @@ module.exports.findOneUser = async(req, res) => {
             res
             .status(404)
             .json({message : "Couldn't find the user with that id"})
-            return
+            return;
         }
 
         res.json(user)
@@ -55,7 +47,7 @@ module.exports.findOneUser = async(req, res) => {
     catch(err){
         res
         .status(500)
-        .json({message : "Something went wrong with the server"})
+        .json({message : err})
         return
     }
 }
@@ -181,7 +173,7 @@ module.exports.login = async(req,res) => {
  }
 
    //store session
-   req.session.save(() => {
+    req.session.save(() => {
     req.session.user_id = user.id;
     req.session.username = user.username;
     req.session.loggedIn = true;
