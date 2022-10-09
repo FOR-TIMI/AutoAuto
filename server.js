@@ -4,7 +4,9 @@ const sequelize = require('./config/connection');
 const exphbs = require('express-handlebars');
 const session = require('express-session');
 const ExpressError = require('./utils/ExpressError')
-const methodOverride = require('method-override')
+const path = require('path')
+const methodOverride = require('method-override');
+require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -37,7 +39,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', path.join(__dirname,'views'));
-app.use(methodOverride('_method'))
+app.use(methodOverride('_method'));
 
 
 //return To routes
@@ -45,8 +47,6 @@ app.use((req, res, next) => {
     if(!['/login','/register'].includes(req.originalUrl)){
       req.session.returnTo = req.originalUrl;
     } 
-   res.locals.success = req.flash("success");
-   res.locals.error = req.flash("error");
    next();
   });
 
@@ -59,14 +59,10 @@ app.all("*", (req, res, next) => {
     next(err);
   });
   
-app.use((err, req, res, next) => {
-    const { statusCode = 500 } = err;
-    if (!err.message) err.message = "Oh no, Something went wrong!";
-    res.status(statusCode).render("error", { err });
-});
 
 // turn on connection to db and server
 
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log(`App is listening on port ${PORT}`));
 });
+

@@ -15,7 +15,8 @@ const seedAll = async () => {
 
   await seedVehicle();
 
-  process.exit(0);
 };
 
 seedAll();
+
+module.exports = seedAll

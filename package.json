@@ -4,9 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cross-env SESSION_SECRET=notsecure jest --injectGlobals=false",
     "seed": "node seeds/index.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -21,5 +22,13 @@
     "method-override": "^3.0.0",
     "mysql2": "^2.3.3",
     "sequelize": "^6.24.0"
+  },
+  "devDependencies": {
+    "@jest/globals": "^27.5.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.15.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.20",
+    "supertest": "^6.2.2"
   }
 }

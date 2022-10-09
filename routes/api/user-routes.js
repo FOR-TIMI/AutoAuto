@@ -3,11 +3,11 @@ const userController = require('../../controllers/user-controller')
 
 
 
-router.route('/')
+router.route('/users')
       .get(userController.findAllUsers)
       .post(userController.createUser)
 
-router.route('/:id')
+router.route('/users/:id')
       .get(userController.findOneUser)
       .put(userController.updateUser)
       .delete(userController.delete)
