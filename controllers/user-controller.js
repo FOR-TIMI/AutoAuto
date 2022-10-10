@@ -30,7 +30,6 @@ module.exports.findOneUser = async(req, res) => {
             include: [
                 {
                     model: Vehicle,
-                   
                 }
             ]
         })

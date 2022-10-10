@@ -21,5 +21,8 @@ async function filterClickHandler(event) {
     }
   }
   
-  document.querySelector('.filter-btn').addEventListener('click', filterClickHandler);
+  document.querySelector('.filter-btn-car-make').addEventListener('click', filterClickHandler);
+  document.querySelector('.filter-btn-car-year').addEventListener('click', filterClickHandler);
+  document.querySelector('.filter-btn-car-price').addEventListener('click', filterClickHandler);
+  document.querySelector('.filter-btn-car-model').addEventListener('click', filterClickHandler);
   
