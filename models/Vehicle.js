@@ -5,30 +5,27 @@ class Vehicle extends Model {}
 
 Vehicle.init(
   {
-    id: {
+    vehicle_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
-    car_make_id: {
+    car_make: {
       type: DataTypes.INTEGER,
-      references: {
-        model: 'CarMake',
-        key: 'id',
-      },
+      allowNull: false,
     },
-    car_model_id: {
+    car_model: {
       type: DataTypes.INTEGER,
-      references: {
-        model: 'CarModel',
-        key: 'id',
-      },
+      allowNull: false,
     },
     vin: {
       type: DataTypes.STRING,
       unique: true,
       allowNull: false,
+      validate: {
+        len: [16,16],
+      },
     },
     year: {
       type: DataTypes.INTEGER,
@@ -38,14 +35,6 @@ Vehicle.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    user_id: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
-    }
   },
   {
     sequelize,

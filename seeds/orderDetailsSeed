@@ -1,0 +1,32 @@
+const { OrderDetails } = require('../models');
+
+const orderDetailsData = [
+  {
+    order_details_id: 1,
+    vehicle_id: 1,
+  },
+  {
+order_details_id: 2,
+    vehicle_id: 2,
+  },
+  {
+    order_details_id: 3,
+    vehicle_id: 3,
+  },
+  {
+    order_details_id: 4,
+    vehicle_id: 4,
+  },
+  {
+    order_details_id: 5,
+    vehicle_id: 5,
+  },
+  {
+    order_details_id: 6,
+    vehicle_id: 6,
+  },
+];
+
+const seedOrderDetails = () => OrderDetails.bulkCreate(orderDetailsData);
+
+module.exports = seedOrderDetails;
