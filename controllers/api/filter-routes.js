@@ -46,7 +46,6 @@ if (carYearBool === true)
 {
 // get all posts for dashboard
 router.get('/', withAuth, (req, res) => {
-  
   Vehicle.findAll({
     order: [['year']
       //bools that determine the sequelize data filters 
@@ -58,16 +57,8 @@ router.get('/', withAuth, (req, res) => {
       ],
       include: [
         {
-          model: CarMake,
-          attributes: ['id', 'name', 'created_at']
-        }, 
-        {
-          model: CarModel,
-          attributes: ['id', 'name', 'car_make_id']
-        },
-        {
           model: Vehicle, 
-            attributes: ['id', 'car_make_id', 'car_model_id', 'vin', 'year', 'price', 'user_id']
+          attributes: ['id', 'car_make', 'car_model', 'vin', 'year', 'price','vehicle_pictures']
         }
       ]
     })
@@ -85,7 +76,6 @@ else if (carPriceBool === true)
 {
 // get all posts for dashboard
 router.get('/', withAuth, (req, res) => {
-  
   Vehicle.findAll({
     order: [['price']
       //bools that determine the sequelize data filters 
@@ -97,16 +87,8 @@ router.get('/', withAuth, (req, res) => {
       ],
       include: [
         {
-          model: CarMake,
-          attributes: ['id', 'name', 'created_at']
-        }, 
-        {
-          model: CarModel,
-          attributes: ['id', 'name', 'car_make_id']
-        },
-        {
           model: Vehicle, 
-            attributes: ['id', 'car_make_id', 'car_model_id', 'vin', 'year', 'price', 'user_id']
+          attributes: ['id', 'car_make', 'car_model', 'vin', 'year', 'price','vehicle_pictures']
         }
       ]
     })
@@ -124,8 +106,7 @@ else if (carMakeBool === true)
 {
 // get all posts for dashboard
 router.get('/', withAuth, (req, res) => {
-  
-  CarMake.findAll({
+  Vehicle.findAll({
     order: [['name']
       //bools that determine the sequelize data filters 
     ],
@@ -136,16 +117,8 @@ router.get('/', withAuth, (req, res) => {
       ],
       include: [
         {
-          model: CarMake,
-          attributes: ['id', 'name', 'created_at']
-        }, 
-        {
-          model: CarModel,
-          attributes: ['id', 'name', 'car_make_id']
-        },
-        {
           model: Vehicle, 
-            attributes: ['id', 'car_make_id', 'car_model_id', 'vin', 'year', 'price', 'user_id']
+          attributes: ['id', 'car_make', 'car_model', 'vin', 'year', 'price','vehicle_pictures']
         }
       ]
     })
@@ -163,8 +136,7 @@ else if (carModelBool === true)
 {
 // get all posts for dashboard
 router.get('/', withAuth, (req, res) => {
-  
-  CarModel.findAll({
+  Vehicle.findAll({
     order: [['name']
       //bools that determine the sequelize data filters 
     ],
@@ -175,16 +147,8 @@ router.get('/', withAuth, (req, res) => {
       ],
       include: [
         {
-          model: CarMake,
-          attributes: ['id', 'name', 'created_at']
-        }, 
-        {
-          model: CarModel,
-          attributes: ['id', 'name', 'car_make_id']
-        },
-        {
           model: Vehicle, 
-            attributes: ['id', 'car_make_id', 'car_model_id', 'vin', 'year', 'price', 'user_id']
+          attributes: ['id', 'car_make', 'car_model', 'vin', 'year', 'price','vehicle_pictures']
         }
       ]
     })
