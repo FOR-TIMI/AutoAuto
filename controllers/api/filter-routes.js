@@ -34,7 +34,7 @@ carPriceClickEvent.addEventListener("click", () => {
   carModelBool = false; 
 });
 
-carPriceClickEvent.addEventListener("click", () => {
+carModelClickEvent.addEventListener("click", () => {
 	carMakeBool = false; 
   carYearBool = false; 
   carPriceBool = false; 
