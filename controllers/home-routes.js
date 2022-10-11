@@ -14,12 +14,8 @@ router.get('/', withAuth, (req, res) => {
       ],
       include: [
         {
-          model: CarModel,
-          attributes: ['id', 'name', 'car_make_id']
-        },
-        {
           model: Vehicle, 
-            attributes: ['id', 'car_make_id', 'car_model_id', 'vin', 'year', 'price', 'user_id']
+          attributes: ['id', 'car_make', 'car_model', 'vin', 'year', 'price','vehicle_pictures']
         }
       ]
     })
