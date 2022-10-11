@@ -12,11 +12,11 @@ Vehicle.init(
       autoIncrement: true,
     },
     car_make: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     car_model: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     vin: {
@@ -35,6 +35,10 @@ Vehicle.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+    vehicle_pictures: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    }
   },
   {
     sequelize,
