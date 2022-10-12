@@ -9,8 +9,9 @@
     
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link" href="/">Home</a>
-                    {{#if signedInUser}}                
+                    {{#if loggedIn}}                
                     <a class="nav-link" href="/logout">Logout</a>
+                    <a class="nav-link" href="/profile">Profile</a>
                     {{else}}
                     <a class="nav-link" href="/login">Login</a>
                     <a class="nav-link" href="/register">Sign Up</a>

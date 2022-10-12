@@ -41,10 +41,6 @@ module.exports.findOneUser = async(req, res) => {
             return;
         }
 
-        const userData = {
-            username: 'chirs',
-            password: 'asdasd'
-        }
 
         res.json(user)
     }
@@ -90,7 +86,7 @@ try{
          req.session.user_id = user.id;
          req.session.username = user.username;
     
-        return res.json({...req.session, user})
+         res.render('cars/index',{...req.session, user})
        });
 }
 
@@ -181,7 +177,7 @@ module.exports.login = async(req,res) => {
     req.session.user_id = user.id;
     req.session.username = user.username;
     req.session.loggedIn = true;
-    res.json({ user, message: 'You are no logged in!' });
+    res.render('cars/index',{...req.session, user})
    });
 
 }
@@ -189,9 +185,7 @@ module.exports.login = async(req,res) => {
 module.exports.logout = async(req, res) => {
     if (req.session.loggedIn) {
         req.session.destroy(() => {
-            res
-            .status(204)
-            .end();
+            res.redirect('/login')
         })
     } else {
         res

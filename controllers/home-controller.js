@@ -1,7 +1,7 @@
 const {Vehicle} = require('../models');
 
 module.exports.renderHomePage = async(req,res) => {
-    res.render('cars/index')
+    res.render('cars/index',{...req.session})
 }
 
 module.exports.renderLoginPage = async(req,res) => {
