@@ -41,6 +41,11 @@ module.exports.findOneUser = async(req, res) => {
             return;
         }
 
+        const userData = {
+            username: 'chirs',
+            password: 'asdasd'
+        }
+
         res.json(user)
     }
     catch(err){
