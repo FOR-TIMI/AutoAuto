@@ -1,73 +1,79 @@
 
 {{> navbar}}
 
-<main class="container d-flex justify-content-center align-items-center">
-  {{!-- <section class="container">
-    <section class="row">
-       <section class="col-md-6">
-          <div class="welcome-text-image">
-            <img src="" alt="">
-          </div>
-          <article class="welcome-text">
-            <h3>Hey there,</h3>
-            <p>
-              We're Autozen and we make buying your car online fast, fair and easy. 
-            </p>
-            <span>
-              Get the benefit of 150+ buyers competing to give you the best offer, without leaving the comfort of your home!
-            </span>
-          </article>
-       </section>
-       <section class="col-md-6">
-          <article>
-            <h4>Find out what your car is worth</h4>
-            <span>
-              Get the benefit of 150+ buyers competing to give you the best offer, without leaving the comfort of your home!
-            </span>
-          </article>
-       </section>
-    </section>
-  </section> --}}
 
+
+<main >
+
+  <section class=" d-flex justify-content-center align-items-center">
+    <img class="w-100" src="https://www.motorlandautosales.ca/wp-content/uploads/2022/04/banner.png" alt="">
+    <a href="" class="btn btn-danger position-absolute">
+      <i class="fa fa-calendar mr-2" aria-hidden="true"></i>
+      Book an appointment
+    </a>
+  </section>
+  
+  <section class="d-flex justify-content-center flex-column align-items-center bg-dark text-white mt-5 vh-100">
     
-<div id="carouselExampleIndicators" class="carousel slide mt-3" data-bs-ride="true">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active ">
-      <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="https://images.unsplash.com/photo-1502161254066-6c74afbf07aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" class="d-block w-100" alt="...">
-       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+    <section class="row d-flex">
+      <h4 class=" text-center">Search Inventory</h4>
+
+
+        <form class="row mt-5 mr-0 p-0" action="">
+
+            <div class="dropdown col-md-3">
+            <button class="w-100 btn btn-light btn-lg dropdown-toggle" type="button" id="year-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              All year
+            </button>
+              <ul class="dropdown-menu " aria-labelledby="year-toggle">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Same here~!!!</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <div class="dropdown col-md-3">
+            <button class="w-100 btn btn-light btn-lg dropdown-toggle" id="make-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              All make
+            </button>
+              <ul class="dropdown-menu" aria-labelledby="make-toggle">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">For make</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <div class="dropdown col-md-3">
+            <button class="w-100 btn btn-light btn-lg dropdown-toggle" id="model-toggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              All models
+            </button>
+              <ul class="dropdown-menu" aria-labelledby="model-toggle">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">For model</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+
+            <button id="search-filter" type="submit" class="btn btn-danger col-md-2">
+             <i class="fa fa-search mr-2"></i>
+             Search
+            </button>
+
+        </form>
+
+           <div class="text-center d-flex justify-content-center flex-column align-items-center py-3 mt-5">
+              --OR--
+
+              <a href="" type="submit" class="btn btn-lg btn-danger mt-3">view inventory</a>
+            </div>
+            
+
+      
+
+
+    </section>
+  </section>
+    
     
 
 </main>
+
+<script src="home.js"></script>
