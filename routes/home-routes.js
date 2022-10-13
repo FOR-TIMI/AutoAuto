@@ -1,7 +1,8 @@
 const router = require('express').Router();
 const homeController = require('../controllers/home-controller');
 const userController = require('../controllers/user-controller');
-const  {notLoggedIn, isLoggedIn} = require('../utils/middleware')
+const  {notLoggedIn, isLoggedIn} = require('../utils/middleware');
+const filterController = require('../controllers/filter-controller')
 
 
 router.route('/')
@@ -18,8 +19,8 @@ router.route('/register')
 router.route('/logout')
       .get(isLoggedIn,userController.logout)
 
-router.route('/profile')
-      .get()
+router.route('/cars')
+      .get(filterController.findVehicle)
 
 
 

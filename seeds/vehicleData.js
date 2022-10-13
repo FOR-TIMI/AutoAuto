@@ -7,7 +7,7 @@ const vehicleData = [
     vin: '1GCJK33608F209389',
     year: 2008,
     price: 50000,
-    vehicle_pictures: 'https://freeimage.host/i/QpN0l4',
+    vehicle_pictures: 'https://iili.io/QpN0l4.webp',
   },
   {
     car_make: 'Ford',
@@ -15,7 +15,7 @@ const vehicleData = [
     vin: '1FTZR11U53PB36186',
     year: 2003,
     price: 40000,
-    vehicle_pictures: 'https://freeimage.host/i/QpN7xn',
+    vehicle_pictures: 'https://iili.io/QpN7xn.webp',
   },
   {
     car_make: 'Toyota',
@@ -23,7 +23,7 @@ const vehicleData = [
     vin: 'JT2AE00B0R0055402',
     year: 1994,
     price: 20000,
-    vehicle_pictures: 'https://freeimage.host/i/QpNlff',
+    vehicle_pictures: 'https://iili.io/QpNlff.webp',
   },
   {
     car_make: 'Dodge',
@@ -31,7 +31,7 @@ const vehicleData = [
     vin: '1C6RR7FG4ES242450',
     year: 2014,
     price: 35000,
-    vehicle_pictures: 'https://freeimage.host/i/QpN1Ul',
+    vehicle_pictures: 'https://iili.io/QpN1Ul.webp',
   },
   {
     car_make: 'Nissan',
@@ -39,7 +39,7 @@ const vehicleData = [
     vin: '1N4EB32HXRC793717',
     year: 1994,
     price: 25000,
-    vehicle_pictures: 'https://freeimage.host/i/QpNaiG',
+    vehicle_pictures: 'https://iili.io/QpNaiG.webp',
   },
   {
     car_make: 'Honda',
@@ -47,7 +47,7 @@ const vehicleData = [
     vin: '5J6YH28524L035418',
     year: 2004,
     price: 30000,
-    vehicle_pictures: 'https://freeimage.host/i/QpNYVs',
+    vehicle_pictures: 'https://iili.io/QpNYVs.webp',
   },
   {
     car_make: 'Chevrolet',
@@ -55,7 +55,7 @@ const vehicleData = [
     vin: '1GB2C0FG0D0011823',
     year: 2013,
     price: 60000,
-    vehicle_pictures: 'https://freeimage.host/i/Z99AAl',
+    vehicle_pictures: 'https://iili.io/Z99AAl.webp',
   },
   {
     car_make: 'Chevrolet',
@@ -63,7 +63,7 @@ const vehicleData = [
     vin: '1G1JC1249Y7370005',
     year: 2000,
     price: 53000,
-    vehicle_pictures: 'https://freeimage.host/i/Z99u94',
+    vehicle_pictures: 'https://iili.io/Z99u94.webp',
   },
   {
     car_make: 'Ford',
@@ -71,7 +71,7 @@ const vehicleData = [
     vin: '1FAFP582X2A208074',
     year: 2000,
     price: 20000,
-    vehicle_pictures: 'https://freeimage.host/i/Z99RN2',
+    vehicle_pictures: 'https://iili.io/Z99RN2.jpg',
   },
   {
     car_make: 'Ford',
@@ -79,7 +79,7 @@ const vehicleData = [
     vin: '1FAFP44482F226884',
     year: 2001,
     price: 20000,
-    vehicle_pictures: 'https://freeimage.host/i/Z995tS',
+    vehicle_pictures: 'https://iili.io/Z995tS.webp',
   },
   {
     car_make: 'Toyota',
@@ -87,7 +87,7 @@ const vehicleData = [
     vin: '4T1BK46K47Y531034',
     year: 2007,
     price: 25000,
-    vehicle_pictures: 'https://freeimage.host/i/Z99Yo7',
+    vehicle_pictures: 'https://iili.io/Z99Yo7.jpg',
   },
   {
     car_make: 'Toyota',
@@ -95,7 +95,7 @@ const vehicleData = [
     vin: '5TFUU4EN9EX085226',
     year: 2014,
     price: 28000,
-    vehicle_pictures: 'https://freeimage.host/i/Z99cPe',
+    vehicle_pictures: 'https://iili.io/Z99cPe.png',
   },
   {
     car_make: 'Dodge',
@@ -103,7 +103,7 @@ const vehicleData = [
     vin: '3D6WL46A18G179319',
     year: 2008,
     price: 32000,
-    vehicle_pictures: 'https://freeimage.host/i/Z99aV9',
+    vehicle_pictures: 'https://iili.io/Z99aV9.webp',
   },
   {
     car_make: 'Dodge',
@@ -111,7 +111,7 @@ const vehicleData = [
     vin: '2D4FV47T86H469198',
     year: 2006,
     price: 19000,
-    vehicle_pictures: 'https://freeimage.host/i/Z990Ku',
+    vehicle_pictures: 'https://iili.io/Z990Ku.webp',
   },
   {
     car_make: ' Nissan',
@@ -119,7 +119,7 @@ const vehicleData = [
     vin: '3N1CB51D93C700390',
     year: 2003,
     price: 27000,
-    vehicle_pictures: 'https://freeimage.host/i/Z991cb',
+    vehicle_pictures: 'https://iili.io/Z991cb.webp',
   },
   {
     car_make: 'Nissan',
@@ -127,7 +127,7 @@ const vehicleData = [
     vin: 'JN6AZ2KZ4CT021001',
     year: 2012,
     price: 21000,
-    vehicle_pictures: 'https://freeimage.host/i/Z99ESj',
+    vehicle_pictures: 'https://iili.io/Z99ESj.webp',
   },
   {
     car_make: 'Honda',
@@ -135,7 +135,7 @@ const vehicleData = [
     vin: '2HGFG3A49EH001239',
     year: 2014,
     price: 38000,
-    vehicle_pictures: 'https://freeimage.host/i/Z99MHx',
+    vehicle_pictures: 'https://iili.io/Z99MHx.jpg',
   },
   {
     car_make: 'Honda',
@@ -143,7 +143,7 @@ const vehicleData = [
     vin: '1HGEM22703L067122',
     year: 2003,
     price: 15000,
-    vehicle_pictures: 'https://freeimage.host/i/Z99VAQ',
+    vehicle_pictures: 'https://iili.io/Z99VAQ.jpg',
   },
 ];
 

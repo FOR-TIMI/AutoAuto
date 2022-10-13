@@ -1,0 +1,26 @@
+ <div class="row">
+<section class="card mb-3 col-md-8 shadow w100">
+
+        {{#if vehicle_pictures}}
+            <img class="card-img-top" src={{vehicle_pictures}} alt="Responsive image">
+        {{/if}}
+
+			<div class="card-body">
+				
+				  <h5 class="card-title">{{year}} {{car_make}} {{car_model}}</h5>
+				  <p class="card-text"><small class="text-muted">posted on {{createdAt}}</small></p>
+          </div>
+
+
+
+					
+				</a>
+				 <ul class="list-group list-group-flush">
+                        <li class="list-group-item">{{car_make}}</li>
+                        <li class="list-group-item">{{car_model}}</li>
+                        <li class="list-group-item">{{year}}</li>
+                        <li class="list-group-item">{{price}}</li>
+                        <li class="list-group-item">{{vin}}</li>
+                    </ul> 
+        </section>
+				</div>

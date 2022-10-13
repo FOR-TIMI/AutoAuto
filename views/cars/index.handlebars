@@ -7,7 +7,7 @@
 
   <section class=" d-flex justify-content-center align-items-center">
     <img class="w-100" src="https://www.motorlandautosales.ca/wp-content/uploads/2022/04/banner.png" alt="">
-    <a href="" class="btn btn-danger position-absolute">
+    <a href="https://schedule.nylas.com/cindyxin1109-30min" class="btn btn-danger position-absolute">
       <i class="fa fa-calendar mr-2" aria-hidden="true"></i>
       Book an appointment
     </a>
@@ -15,20 +15,18 @@
   
   <section class="d-flex justify-content-center flex-column align-items-center bg-dark text-white mt-5 vh-100">
     
-    <section class="row d-flex">
+    <section class="row  d-flex justify-content-center align-items-center flex-column w-75">
       <h4 class=" text-center">Search Inventory</h4>
 
 
-        <form class="row mt-5 mr-0 p-0" action="">
+        <form class="row mt-5 " action="">
 
-            <div class="dropdown col-md-3">
+            <div class="dropdown col-md-3 align-items-center ">
             <button class="w-100 btn btn-light btn-lg dropdown-toggle" type="button" id="year-toggle" data-bs-toggle="dropdown" aria-expanded="false">
               All year
             </button>
               <ul class="dropdown-menu " aria-labelledby="year-toggle">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Same here~!!!</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  {{!-- Expects years from the api  --}}
               </ul>
             </div>
             <div class="dropdown col-md-3">
@@ -59,11 +57,11 @@
 
         </form>
 
-           <div class="text-center d-flex justify-content-center flex-column align-items-center py-3 mt-5">
+        <form class="text-center d-flex justify-content-center flex-column align-items-center py-3 mt-5" method="get"  action="/cars">
               --OR--
 
-              <a href="" type="submit" class="btn btn-lg btn-danger mt-3">view inventory</a>
-            </div>
+              <button type="submit" class="btn btn-lg btn-danger mt-3">view inventory</button>
+        </form>
             
 
       
@@ -76,4 +74,4 @@
 
 </main>
 
-<script src="home.js"></script>
+<script src="./javascript/home.js"></script>
