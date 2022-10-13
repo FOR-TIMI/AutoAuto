@@ -11,3 +11,8 @@ module.exports.renderLoginPage = async(req,res) => {
 module.exports.renderRegisterPage = async(req,res) => {
     res.render('user/register')
 }
+
+
+module.exports.renderCarsPage = async(req,res) => {
+    res.render('cars/cars', {...req.session, })
+}
