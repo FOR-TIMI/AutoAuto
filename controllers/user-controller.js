@@ -61,33 +61,8 @@ try{
         email: req.body.email
     })
    
-    const user = await User.findOne({
-        where : {
-            username : req.body.username
-        }
-     })
-    
-    
-    //Password Check
-     const validPassword = user && await user.checkPassword(req.body.password) 
-     
-     //Can't find that user
-     if(!user || !validPassword){
-        res
-        .status(404)
-        .json({message : " No user was found with this username"})
-        return;
-     }
-    
-       //store session
-       req.session.save(() => {
-         // declare session variables
-         req.session.loggedIn = true;
-         req.session.user_id = user.id;
-         req.session.username = user.username;
-    
-         res.render('cars/index',{...req.session, user})
-       });
+    //Authenticate user after creating the user
+    await this.login(req,res)
 }
 
 catch(err){
@@ -177,7 +152,7 @@ module.exports.login = async(req,res) => {
     req.session.user_id = user.id;
     req.session.username = user.username;
     req.session.loggedIn = true;
-    res.render('cars/index',{...req.session, user})
+    res.redirect('/')
    });
 
 }
