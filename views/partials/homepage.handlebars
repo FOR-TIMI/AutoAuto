@@ -1,7 +1,37 @@
-<ol class="car-list">
-  {{#each cars as |car|}}
-  <li>
-    {{> cars}}
-  </li>
-  {{/each}}
-</ol>
+{{> navbar}}
+<div class="btn-group">
+  {{!-- Make Drop Down Button --}}
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Make
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+     {{#each vehicles as |vehicle|}}
+      <a class="dropdown-item" href="#"> {{>vehicle.car_make}}</a>
+    {{/each}}
+  </div>
+
+  {{!-- Model Drop Down Button --}}
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Model
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+     {{#each vehicles as |vehicle|}}
+      <a class="dropdown-item" href="#"> {{>vehicle.car_model}}</a>
+    {{/each}}
+  </div>
+  {{!-- Year Dropdown item  --}}
+   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Year
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+     {{#each vehicles as |vehicle|}}
+      <a class="dropdown-item" href="#"> {{>vehicle.year}}</a>
+    {{/each}}
+  </div>
+
+  {{!-- Price Range Slider
+   <label for="customRange2" class="form-label">Price Range</label>
+   <input type="range" class="form-range" min="0" max="500000" id="customRange2" oninput="this.nextElementSibling.value = this.value"> --}}
+
+</div>

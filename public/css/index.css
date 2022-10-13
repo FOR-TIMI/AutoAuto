@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.bg-custom-1 {
+    background-color: #85144b;
+  }
+  
+  .bg-custom-2 {
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  }
+
+.forms-inputs{position: relative}
+.forms-inputs span{position: absolute;top:-18px;left: 10px;background-color: #fff;padding: 5px 10px;font-size: 15px}
+.forms-inputs input{height: 50px;border: 2px solid #eee}
+.forms-inputs input:focus{box-shadow: none;outline: none;border: 2px solid #000}
+
+/* .carousel-inner > .item > img {
+    width:100%;
+    height:360px;
+} */
+
+.carousel {
+    width:640px;
+    height:360px;
+  }

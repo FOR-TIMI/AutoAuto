@@ -1,0 +1,77 @@
+
+{{> navbar}}
+
+
+
+<main >
+
+  <section class=" d-flex justify-content-center align-items-center">
+    <img class="w-100" src="https://www.motorlandautosales.ca/wp-content/uploads/2022/04/banner.png" alt="">
+    <a href="https://schedule.nylas.com/cindyxin1109-30min" class="btn btn-danger position-absolute">
+      <i class="fa fa-calendar mr-2" aria-hidden="true"></i>
+      Book an appointment
+    </a>
+  </section>
+  
+  <section class="d-flex justify-content-center flex-column align-items-center bg-dark text-white mt-5 vh-100">
+    
+    <section class="row  d-flex justify-content-center align-items-center flex-column w-75">
+      <h4 class=" text-center">Search Inventory</h4>
+
+
+        <form class="row mt-5 " action="">
+
+            <div class="dropdown col-md-3 align-items-center ">
+            <button class="w-100 btn btn-light btn-lg dropdown-toggle" type="button" id="year-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              All year
+            </button>
+              <ul class="dropdown-menu " aria-labelledby="year-toggle">
+                  {{!-- Expects years from the api  --}}
+              </ul>
+            </div>
+            <div class="dropdown col-md-3">
+            <button class="w-100 btn btn-light btn-lg dropdown-toggle" id="make-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              All make
+            </button>
+              <ul class="dropdown-menu" aria-labelledby="make-toggle">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">For make</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <div class="dropdown col-md-3">
+            <button class="w-100 btn btn-light btn-lg dropdown-toggle" id="model-toggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              All models
+            </button>
+              <ul class="dropdown-menu" aria-labelledby="model-toggle">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">For model</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+
+            <button id="search-filter" type="submit" class="btn btn-danger col-md-2">
+             <i class="fa fa-search mr-2"></i>
+             Search
+            </button>
+
+        </form>
+
+        <form class="text-center d-flex justify-content-center flex-column align-items-center py-3 mt-5" method="get"  action="/cars">
+              --OR--
+
+              <button type="submit" class="btn btn-lg btn-danger mt-3">view inventory</button>
+        </form>
+            
+
+      
+
+
+    </section>
+  </section>
+    
+    
+
+</main>
+
+<script src="./javascript/home.js"></script>

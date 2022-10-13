@@ -1,0 +1,47 @@
+{{> login-navbar}}
+
+<section class="container">
+<section class="row d-flex justify-content-center align-items-center mt-5">
+
+  <section class="col-md-6 ">
+          <form method="POST" action="/login" id="login-form" class="shadow p-4 validated-form d-flex justify-content-center align-items-center flex-column " novalidate>
+                   <h5 class="mb-4 text-center">Login</h5>
+ 
+                    <div class="forms-inputs my-4 w-75 input-box">
+                        <span for="loginUsername">username</span>
+                            <input
+                                class="form-control"
+                                id="loginUsername"
+                                type="text"
+                                name="username"
+                                autocomplete="off"
+                                required
+                                autofocus
+                            />
+                            
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">you must enter a valid username</div>
+                        </div>
+    
+                        <div class="forms-inputs mb-4 w-75 input-box">
+                            <span for="loginPassword">password</span>
+                            <input
+                                class="form-control"
+                                id="loginPassword"
+                                type="password"
+                                name="password"
+                                minlength="8"
+                                required
+                            />
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">password must be at least 8 characters</div>
+                        </div>
+    
+                        <button type="submit" class="btn-center d-block btn btn-dark text-white mb-3">Login</button>
+                        <a class="text-dark mb-3" href="/register">Don't have an account?</a>
+
+            </form>
+  </section>
+</section>
+</section>
+

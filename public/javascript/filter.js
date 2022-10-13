@@ -4,7 +4,7 @@ async function filterClickHandler(event) {
     const id = window.location.toString().split('/')[
       window.location.toString().split('/').length - 1
     ];
-    const response = await fetch('/api/filter-routes', {
+    const response = await fetch('/api/searchoptions/filterbtn', {
       method: 'PUT',
       body: JSON.stringify({
         post_id: id
@@ -21,10 +21,5 @@ async function filterClickHandler(event) {
     }
   }
   
-  document.querySelector('.filter-btn-car-make').addEventListener('click', filterClickHandler);
-  document.querySelector('.filter-btn-car-year').addEventListener('click', filterClickHandler);
-  document.querySelector('.filter-btn-car-price').addEventListener('click', filterClickHandler);
-  document.querySelector('.filter-btn-car-model').addEventListener('click', filterClickHandler);
-
-
+  document.querySelector('.filter-btn').addEventListener('click', filterClickHandler);
   

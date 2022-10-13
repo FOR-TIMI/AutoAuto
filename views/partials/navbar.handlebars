@@ -1,0 +1,37 @@
+<header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">AutoAuto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    
+                <div class="navbar-nav ms-auto d-flex align-items-center">
+                    <a class="nav-link mr-3" href="/">Home</a>
+                    {{!-- <a class="nav-link mr-3" href="#">About us</a> --}}
+                    <a class="nav-link mr-3 btn btn-danger text-white" href="https://schedule.nylas.com/cindyxin1109-30min">
+                    <i class="fa fa-calendar mr-2"></i>
+                    Book appointment</a>
+                    {{#if loggedIn}}                
+
+                    <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-user mr-2"></i> profile
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-muted" href="#"><i class="fa-solid fa-gauge mr-2"></i> Dashboard</a></li>
+                        <li><a class="dropdown-item text-muted" href="#"><i class="fa-solid fa-user-pen mr-2"></i>Edit Profile</a></li>
+                        <li><a class="dropdown-item text-muted" href="/logout"><i class="fa-solid fa-right-from-bracket mr-2"></i>Log Out</a></li>
+                    </ul>
+                    </div>
+
+                    {{else}}
+                    <a class="nav-link mr-3" href="/login">Login</a>
+                    <a class="nav-link mr-3" href="/register">Sign Up</a>
+                    {{/if }}
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
