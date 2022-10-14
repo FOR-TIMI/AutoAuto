@@ -49,7 +49,14 @@ To Install and begin working on the AutoAuto project follow these easy steps:
 
 13. Enter the command '<b>npm run seed</b>' to populate the database with data
 
-This initializes the project to where it is ready to be worked on as a developer!
+This initializes the project to d '<b>node ./seeds</b>'
+This will see the wwebsite!As for seeding the deployed heroku website, in the terminal in the app dyno in heroku and enter the command:
+'<b>heroku run bash</b>' followed by the command '<b>node ./seeds</b>'
+This will see the wwebsite!
+
+
+
+
 
 ## Usage
 
