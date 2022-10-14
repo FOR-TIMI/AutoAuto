@@ -4,6 +4,10 @@
 
 AutoAuto is the one stop website shop to setup an appointment to buy the car of your dreams today! The motivation behind making AutoAuto was to create a hub for a would-be car dealership so they can showcase their cars online. Users can login and view the various cars and car data. Autouto was made with using the MVC method where it uses sequilize to interact with a MySQL database.
 
+
+![AutoAuto Website](./public/pictures/website-example.png)
+
+
 ## Table of Contents
 
 - [URLs](#urls)
@@ -14,7 +18,7 @@ AutoAuto is the one stop website shop to setup an appointment to buy the car of 
 
 ## URLs
 Github repositry link: https://github.com/AdamGabo/eStoreThatSellsCarStuff <br>
-Deployed application link: https://sahebbhalla.github.io/BERG/
+Deployed application link: https://stormy-wildwood-35895.herokuapp.com/
 
 ## Installation
 To Install and begin working on the AutoAuto project follow these easy steps:
