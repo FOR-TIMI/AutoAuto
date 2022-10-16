@@ -17,14 +17,14 @@ AutoAuto is the one stop website shop to setup an appointment to buy the car of 
 - [License](#license)
 
 ## URLs
-Github repositry link: https://github.com/AdamGabo/eStoreThatSellsCarStuff <br>
+Github repositry link: https://github.com/FOR-TIMI/AutoAuto <br>
 Deployed application link: https://stormy-wildwood-35895.herokuapp.com/
 
 ## Installation
 To Install and begin working on the AutoAuto project follow these easy steps:
 
 1. Open the terminal at the directory you would like to clone the project
-2. In the terminal enter: '<b>git clone https://github.com/AdamGabo/eStoreThatSellsCarStuff.git</b>' to create a clone of the AutoAuto Repo
+2. In the terminal enter: '<b>https://github.com/FOR-TIMI/AutoAuto.git</b>' to create a clone of the AutoAuto Repo
 3. In the terminal enter: '<b>code .</b>' to open the project in the Visual Studios development environment
 
 ![npm Installation](./public/pictures/npm-installation.png)
@@ -61,7 +61,7 @@ This will see the wwebsite!
 ## Usage
 
 To run the application open the projects main folder in the terminal
-Enter the command '<b>npm start</b>'
+Enter the command ```npm start```
 
 ## Credits
 
