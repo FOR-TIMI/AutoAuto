@@ -36,7 +36,7 @@ To Install and begin working on the AutoAuto project follow these easy steps:
 
 6. In the Visual Studios Explorer Window make a copy of the .env.sample file and paste it in the projects main folder.
 7. Rename the copied file from '.env.sample' to '<b>.env</b>'.
-8. In the .env file set the DB_NAME='auto_auto_db', fill in DB_USER='your MYSQL username here' and fill in DB_PASSWORD='your password here'
+8. In the .env file set the DB_NAME='auto_auto_db', fill in DB_USER='your MYSQL username here' and fill in DB_PASSWORD='your database password here'
 
 ![env Example](./public/pictures/env-example.png)
 
